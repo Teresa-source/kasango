@@ -1,0 +1,43 @@
+name: game
+description: "Application avec splash screen phacochere et page blanche"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo_phacochere.png
+
+flutter_native_splash:
+  color: "#ffffff"  # Fond blanc
+  image: assets/images/logo_phacochere.png
+  android: true
+  ios: true
+  image_dark: assets/images/logo_phacochere.png  # Optionnel pour le mode sombre
+  android_12:
+    image: assets/images/logo_phacochere.png
+    icon_background_color: "#ffffff"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo_phacochere.png"
+  adaptive_icon_foreground: "assets/images/logo_phacochere.png"
+  adaptive_icon_background: "#FFFFFF"
